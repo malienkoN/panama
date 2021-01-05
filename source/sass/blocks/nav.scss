@@ -1,0 +1,14 @@
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: color .2s linear;
+
+  &:hover {
+    color: $orange;
+  }
+}
