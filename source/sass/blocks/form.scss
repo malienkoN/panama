@@ -1,0 +1,15 @@
+.form {
+  display: none;
+}
+
+.form__input {
+  border: 1px solid $gray;
+  padding: 0;
+  background: none;
+}
+
+@media (min-width: 1024px) {
+  .form {
+    display: block;
+  }
+}
