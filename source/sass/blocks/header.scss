@@ -85,15 +85,25 @@
   &:first-of-type {
     border-right: 1px solid $gray;
   }
+}
 
-  &:nth-of-type(2) {
+.header__search,
+.header__login,
+.header__fav {
+  display: none;
+}
+
+.header__login,
+.header__fav,
+.header__cart {
+
+  span {
     display: none;
   }
+}
 
-  &:nth-of-type(3),
-  &:nth-of-type(4) {
-    display: none;
-  }
+.header__cart {
+  stroke: $orange;
 }
 
 .header__actions {
@@ -101,7 +111,7 @@
   height: 100%;
 }
 
-.header__actions .header__btn:nth-of-type(2) {
+.header__fav {
   border-right: 1px solid $gray;
 }
 
@@ -186,13 +196,10 @@
     height: 6rem;
   }
 
-  .header__btn {
-
-    &:nth-of-type(2),
-    &:nth-of-type(3),
-    &:nth-of-type(4) {
-      display: flex;
-    }
+  .header__search,
+  .header__login,
+  .header__fav {
+    display: flex;
   }
 }
 
@@ -210,21 +217,54 @@
 @media (min-width: 1024px) {
   .header {
     border-bottom: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 39px;
+      height: 1px;
+      background-color: $gray;
+      z-index: 1;
+    }
   }
 
   .header__burger {
     display: none;
   }
 
-  .header__actions {
+  .header__search {
     display: none;
   }
 
-  .header__btn {
+  .header__middle {
+    position: relative;
+  }
 
-    &:nth-of-type(2) {
-      display: none;
+  .header__actions {
+    display: flex;
+    height: 4rem;
+    position: absolute;
+    right: 2rem;
+    top: -4rem;
+  }
+
+  .header__login {
+    border-left: 1px solid $gray;
+  }
+
+  .header__cart {
+    background-color: $orange;
+    color: $white;
+
+    svg {
+      stroke: $white;
     }
+  }
+
+  .header__cart-number {
+    color: #ebe26a;
   }
 
   .header__top {
@@ -253,6 +293,10 @@
 
   .header__logo {
     border: 0;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .header {
@@ -263,6 +307,7 @@
     position: absolute;
     top: 77px;
     left: 20px;
+    z-index: 2;
 
     padding-right: 0;
 
@@ -276,10 +321,30 @@
     position: absolute;
     top: 105px;
     left: 20px;
+    z-index: 2;
     width: auto;
     font-size: 1.2rem;
     border-radius: 2px;
 
     padding: 8px 17.25px;
+  }
+
+  .header__btn {
+    width: auto;
+  }
+
+  .header__login,
+  .header__fav,
+  .header__cart {
+    font-weight: 500;
+    padding: 0 2rem;
+
+    svg {
+      margin-right: 7px;
+    }
+
+    span {
+      display: inline-block;
+    }
   }
 }
