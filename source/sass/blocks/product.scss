@@ -37,6 +37,14 @@
   color: $orange;
 }
 
+.product__footer {
+  display: flex;
+}
+
+.product__footer-left {
+  margin-right: 8rem;
+}
+
 .product__footer-buy {
   margin-right: 3rem;
   padding: 10.5px 55.28px;
@@ -50,3 +58,24 @@
     background-color: darken($orange, 5%);
   }
 }
+
+.product__footer-like__icon {
+  stroke: $orange;
+  fill: $white;
+  stroke-width: 2;
+
+  &:hover {
+    fill: $orange;
+  }
+}
+
+.product__footer-right a {
+  display: block;
+  margin-bottom: .5rem;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+

@@ -195,7 +195,7 @@
                     <div class="product__content-middle">
                         <div class="price__wrap">
                             <p class="price__main"><span class="price">5748</span>грн</p>
-                            <strike class="price__strike">6574 грн.</strike>
+                            <p class="price__strike">6574 грн.</p>
                         </div>
 
                         <div class="rating__wrap">
@@ -269,13 +269,19 @@
                     </div>
 
                     <div class="product__footer">
-                        <p class="product__existence"><span>В наличии!</span> Код товара: 382743</p>
-                        <button class="product__footer-buy btn">купить</button>
-                        <button class="product__footer-like btn">
-                            <svg width="20" height="17" viewBox="0 0 20 17">
-                                <use xlink:href="img/sprite.svg#icon-like"></use>
-                            </svg>
-                        </button>
+                        <div class="product__footer-left">
+                            <p class="product__existence"><span>В наличии!</span> Код товара: 382743</p>
+                            <button class="product__footer-buy btn">купить</button>
+                            <button class="product__footer-like btn">
+                                <svg class="product__footer-like__icon" width="20" height="17" viewBox="0 0 20 17">
+                                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="product__footer-right">
+                            <a href="#">Бесплатная доставка!</a>
+                            <a href="#">Гарантия</a>
+                        </div>
                     </div>
                 </div>
             </div><!-- ./product__inner -->
