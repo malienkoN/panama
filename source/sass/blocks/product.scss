@@ -1,0 +1,52 @@
+.product {
+  padding-top: 2rem;
+}
+
+.product__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 4rem;
+}
+
+.product__suptitle {
+  margin: 0 0 1rem 0;
+  color: $orange;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.product__title {
+  margin: 0 0 2rem 0;
+  max-width: 42rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.product__content-middle {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__existence {
+  margin: 0 0 1.5rem 0;
+}
+
+.product__existence span {
+  color: $orange;
+}
+
+.product__footer-buy {
+  margin-right: 3rem;
+  padding: 10.5px 55.28px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: $white;
+  background-color: $orange;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: darken($orange, 5%);
+  }
+}

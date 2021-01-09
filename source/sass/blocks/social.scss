@@ -1,0 +1,8 @@
+.social__item {
+  display: inline-block;
+  margin-right: .5rem;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

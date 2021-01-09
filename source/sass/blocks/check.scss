@@ -1,0 +1,39 @@
+.check {
+  margin-bottom: 2.5rem;
+}
+
+.check__title {
+  margin: 0 0 2rem 0;
+}
+
+.check__inner {
+  display: flex;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__label {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+
+  transition: box-shadow .2s linear;
+}
+
+.check__label:last-of-type {
+  margin-right: 0;
+}
+
+.check__label:hover {
+  box-shadow: 0 0 0 2px #ff3801;
+}

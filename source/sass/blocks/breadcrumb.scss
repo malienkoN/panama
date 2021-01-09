@@ -1,0 +1,34 @@
+.breadcrumb {
+  padding: 0;
+  margin: 0 0 6rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 1rem;
+  content: '\003E';
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 1rem;
+}
+
+.breadcrumb-item {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $black;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
