@@ -2,17 +2,20 @@
     const burger = document.querySelector('#burger');
     const nav = document.querySelector('#nav');
     const close = document.querySelector('#nav-close');
+    const body = document.querySelector("body");
 
     burger.addEventListener('click', event => {
         event.preventDefault();
 
         nav.classList.add('show');
+        body.classList.add("no-scroll");
     });
 
     close.addEventListener('click', event => {
        event.preventDefault();
 
        nav.classList.remove('show');
+       body.classList.remove("no-scroll");
     });
 }
 
