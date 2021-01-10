@@ -1,0 +1,23 @@
+#more {
+  display: none;
+}
+
+.description p {
+  margin: 0 0 2rem 0;
+}
+
+.description__title {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.description__btn {
+  font-size: 1.3rem;
+  color: $orange;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

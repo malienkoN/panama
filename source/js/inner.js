@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-
+// 991 992
     if (window.matchMedia('(max-width: 991px)').matches) {
         // do functionality on screens smaller than 768px
         $('#productSlider').lightSlider({
@@ -19,7 +19,7 @@ $(document).ready(function() {
             vertical: true,
             adaptiveHeight: true,
             loop: true,
-            verticalHeight: 440,
+            verticalHeight: 500,
             vThumbWidth: 60,
             thumbItem: 5,
             thumbMargin: 4,
